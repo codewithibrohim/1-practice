@@ -1,0 +1,287 @@
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/SFProDisplay-UltralightItalic.woff') format('woff'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/SFProDisplay-UltralightItalic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/SFProDisplay-ThinItalic.woff') format('woff'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/SFProDisplay-ThinItalic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/SFProDisplay-LightItalic.woff') format('woff'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/SFProDisplay-LightItalic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/SFProDisplay-Regular.woff') format('woff'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/SFProDisplay-Medium.woff') format('woff'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/SFProDisplay-Medium.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/SFProDisplay-SemiboldItalic.woff') format('woff'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/SFProDisplay-Bold.woff') format('woff'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/SFProDisplay-HeavyItalic.woff') format('woff'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/SFProDisplay-HeavyItalic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/SFProDisplay-BlackItalic.woff') format('woff'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'SFProDisplay';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/SFProDisplay-BlackItalic.woff2') format('woff2'); 
+}
+
+
+/* *{
+box-sizing: border-box;
+}   */
+.container{
+    width: 100%;
+    max-width:1110px;
+    margin: 0 auto;
+}
+
+.site-header{
+    padding: 12px 0;
+    background-color: #F8F8FA;
+}
+.site-header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__first-form{
+    display: flex;
+    justify-content: center;
+}
+.site-header__forms-wrapper{
+    display: flex;
+}
+.site-header__operatorlar-select{
+    margin: 0;
+    padding: 10px 34px 10px 16px;
+    font-family: "SFProDisplay";
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: none;
+    border-right: 1px solid #979797;
+}
+.site-header__first-form{
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+.custom-first__arrow{
+    position: absolute;
+    top: 7px;
+    left: 128px;
+}
+.site-header__operatorlar-input{
+    padding: 10px 40px 10px 15px;
+    width: 261px;
+    font-family: "SFProDisplay";
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: none;
+    background-image: url("../images/search.svg");
+    background-repeat: no-repeat;
+    background-position: calc(92%);
+}
+.site-header__operatorlar-input::placeholder{
+    font-size: 14px;
+    opacity: 30%;
+}
+.site-header__operatorlar-service{
+    margin-right: 14px;
+    padding: 10px 31px;
+    font-size: 14px;
+    font-family: "SFProDisplay";
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    border: none;
+    background-image: url("../images/phone-call.svg");
+    background-repeat: no-repeat;
+    background-position: 10%;
+}
+.site-header_second-form{
+    position: relative;
+}
+.custom-second__arrow{
+    position: absolute;
+    top: 7px;
+    left: 100px;
+}
+/* .site-header__operatorlar-label{
+position: relative;
+} */
+.site-header__user-service{
+    padding: 10px 31px;
+    font-size: 14px;
+    font-family: "SFProDisplay";
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    border: none;
+    background-image: url("../images/user.svg");
+    background-repeat: no-repeat;
+    background-position: 10%;
+}
+.custom-third__arrow{
+    position: absolute;
+    top: 7px;
+    right: 4px;
+}
+@media only screen and (max-width: 1000px){
+    .site-header{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .site-header__first-form{
+        padding-bottom: 10px;
+    }
+    .site-header__forms-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .custom-third__arrow{
+        right: 140px;
+    }
+        .site-header__operatorlar-service{
+            margin: 0;
+            border-right: 1px solid #979797;
+        }
+} 
+@media only screen and (max-width:700px){
+    .site-header__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .site-header__logo-img{
+        padding-bottom: 10px;
+    }
+    .site-header__first-form{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .site-header__operatorlar-select{
+        margin: 0;
+        border: none;
+    }
+    .site-header__operatorlar-input{
+        margin-bottom: 5px;
+    }
+    .site-header_second-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .site-header__operatorlar-service{
+        border: none;
+        margin-bottom: 5px;
+        padding-left: 40px;
+    }
+    .site-header__user-service{
+        padding-left: 40px;
+    }
+    
+}
+
